@@ -1,6 +1,17 @@
-import java.lang.*;
 /*
  * The shell of the class, to be completed as part of CSC115 Assignment 4 : Patient Location.
+ */
+
+
+/*
+ * NOTE TO STUDENT:
+ * Complete this class as per the BinaryTree.html specification document.
+ * Fill in any of the parts that have the comment:
+ *	/******* COMPLETE *******/
+ * Do not change method headers or code that has been supplied.
+ * Write as many methods as you need to make the code simple and easy to understand.
+ * All methods must be properly commented.
+ * Delete all messages to you, including this one, before submtting.
  */
  
 public class BinaryTree<E> {
@@ -31,28 +42,8 @@ public class BinaryTree<E> {
 	protected TreeNode<E> getRoot() {
 		return root;
 	}
-	private int heightAt(TreeNode item){
-		if(isEmpty()){
-			return 0;
-		}else{
-			return 1+Math.max(heightAt(item.left),heightAt(item.right));
-		}
-	}
-	public int height(){
-		if(isEmpty()){
-			return 0;
-		}else{
-			return 1+Math.max(heightAt(root.left), heightAt(root.right));
-		}
-		
-	}
-	public boolean isEmpty(){
-		return root==null;
-	}
-	public void makeEmpty(){
-		root=null;
-		
-	}
+
+ 	/******* COMPLETE *******/
 
 }
 
